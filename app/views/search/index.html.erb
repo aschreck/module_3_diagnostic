@@ -1,10 +1,11 @@
 <h1>Don't Look Now, It's Your Stations</h1>
 <% @stations.each do |station|%>
- <p><%=station.name%></p>
- <p><%=station.address%></p>
- <p><%=station.fuel_type%></p>
- <p><%=station.distance%></p>
- <p><%=station.access_times%></p>
+ <p>Station Name: <%=station.name%></p>
+ <p>Address: <%=station.address%></p>
+ <p>Fuel Type: <%=station.fuel_type%></p>
+ <p>Distance: <%=station.distance%></p>
+ <p>Access Times: <%=station.access_times%></p></ br>
+ <p>_____ </p>
 <% end %>
 
-count: <%=@stations.count%>%
+count: <%=@stations.count%>
