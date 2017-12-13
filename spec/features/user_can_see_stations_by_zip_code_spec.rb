@@ -15,7 +15,7 @@ describe "When a user inputs their zip code into the search" do
 
     # And the stations should be limited to Electric and Propane
     expect(page).to have_content("ELEC")
-    expect(page).to have_content("LPG")
     # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
+    expect(page).to have_content("count: 10")
   end 
 end 
